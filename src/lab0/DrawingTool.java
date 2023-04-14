@@ -37,6 +37,7 @@ public class DrawingTool extends JFrame {
     }
 
     public static void main(String[] args) {
-        new DrawingTool("This is a Cat");
+        DrawingTool drawingTool = new DrawingTool("This is a Cat");
+        System.out.println("App started.");
     }
 }
