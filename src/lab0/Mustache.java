@@ -16,11 +16,11 @@ public class Mustache {
 
     public void drawAt(int left, int bottom)
     {
-        int x = left - 32;
-        int y = bottom + 10;
+        int x = left - 60;
+        int y = bottom + 20;
 
         Drawing.pen().setColor(MustacheColor);
-        Drawing.pen().drawArc(340, 320, 75, 75, 0, 180);
+        Drawing.pen().drawArc(x, y, 75, 75, 0, 180);
 
     }
 

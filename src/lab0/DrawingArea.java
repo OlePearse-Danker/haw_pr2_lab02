@@ -16,8 +16,9 @@ import javax.swing.*;
 import java.awt.*;
 
 
-@SuppressWarnings("serial")
 public class DrawingArea extends JPanel {
+
+    private static final long serialVersionUID = 1L;
 
     @Override
     protected void paintComponent(Graphics g) {
@@ -36,7 +37,7 @@ public class DrawingArea extends JPanel {
         Drawing.pen().drawOval(200, 500, 50, 50);*/
 
         Cat aCat = new Cat();
-        aCat.drawAt(400, 300);
+        aCat.drawAt(600, 400);
 
         // you find further commands at oracle docs for Java 1.8:
         // https://docs.oracle.com/javase/8/docs/api/java/awt/Graphics.html

@@ -9,16 +9,33 @@ public class Upper_body {
 
     private Color upper_body_color = new Color(153,102,0);
 
+    private Tail aTail;
+    private Legs aLegs;
+
+
     public Upper_body(int width, int height) {
         this.width = width;
         this.height = height;
+
+        this.aTail = new Tail(10, 10);
+        this.aLegs = new Legs(20, 50);
+
     }
 
     public void drawAt(int left, int bottom) {
 
+        int xTail = left + 224;
+        int yTail = bottom + 45;
+
+        int xLegs = left;
+        int yLegs = bottom + 170;
+
         // drawing the upper body
         Drawing.pen().setColor(upper_body_color);
         Drawing.pen().fillOval(left, bottom, width, height);
+
+        aTail.drawAt(xTail, yTail);
+        aLegs.drawAt(xLegs, yLegs);
 
     }
 }

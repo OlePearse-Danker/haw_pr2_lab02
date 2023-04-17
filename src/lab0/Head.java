@@ -10,7 +10,7 @@ public class Head {
 
     private Eyes aEyes;
 
-    private Ears aEars;
+    private Ears ears;
 
     private Mouth aMouth;
 
@@ -20,10 +20,10 @@ public class Head {
         this.width = width;
         this.height = height;
 
-        aEyes = new Eyes(15, 15);
-        aMouth = new Mouth(20, 20);
-        aEars = new Ears(20, 50);
-        aMustache = new Mustache(20, 20);
+        this.aEyes = new Eyes(15, 15);
+        this.aMouth = new Mouth(20, 20);
+        this.ears = new Ears(20, 50);
+        this.aMustache = new Mustache(20, 20);
     }
 
     public void drawAt(int left, int bottom){
@@ -32,11 +32,11 @@ public class Head {
         int y = bottom - 50;
 
         // Coordinates for Eye
-        int xEye =  left - 10;
+        int xEye = left - 10;
         int yEye = bottom - 10;
 
         // Coordinates for Ears
-        int xEar =  left - 10;
+        int xEar = left - 10;
         int yEar = bottom - 10;
 
         // Coordinates for the mouth
@@ -53,7 +53,7 @@ public class Head {
 
         aEyes.drawAt(xEye, yEye);
         aMouth.drawAt(xMouth, yMouth);
-        aEars.drawAt(xEar, yEar);
+        ears.drawAt(xEar, yEar);
         aMustache.drawAt(xMustache, yMustache);
 
     }

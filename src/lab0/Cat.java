@@ -2,27 +2,25 @@ package lab0;
 
 public class Cat {
 
-private Head aHead;
-private Upper_body aUpper_body;
-
-private Tail aTail;
-
-private Legs aLegs;
+    private Head aHead;
+    private Upper_body aUpper_body;
 
 
-public Cat() {
-    aHead = new Head(100,100);
-    aUpper_body = new Upper_body(300,100);
-    aTail = new Tail(100, 100);
-    aLegs = new Legs(20, 50);
-}
+    public Cat() {
+        aHead = new Head(100,100);
+        aUpper_body = new Upper_body(300,100);
+    }
 
 public void drawAt(int left, int bottom) {
 
-    aUpper_body.drawAt(left, bottom);
-    aHead.drawAt(left, bottom);
-    aTail.drawAt(left,bottom);
-    aLegs.drawAt(left, bottom);
+        int xUpper_body = left;
+        int yUpper_body = bottom;
+
+        int xHead = left;
+        int yHead = bottom;
+
+    aHead.drawAt(xHead, yHead);
+    aUpper_body.drawAt(xUpper_body, yUpper_body);
 }
 
 }

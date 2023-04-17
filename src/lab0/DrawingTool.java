@@ -14,8 +14,10 @@ package lab0;
 import javax.swing.JFrame;
 import java.awt.*;
 
-@SuppressWarnings("serial")
 public class DrawingTool extends JFrame {
+
+    private static final long serialVersionUID = 1L;
+
     private DrawingArea drawing;
 
     public DrawingTool(String title) {
