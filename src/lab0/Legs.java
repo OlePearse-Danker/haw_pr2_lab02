@@ -10,8 +10,8 @@ public class Legs {
 
     public Legs(int width, int height){
 
-        this.width = width;
-        this.height = height;
+        this.width = width/3;
+        this.height = height/3;
     }
 
     public void drawAt(int left, int bottom)

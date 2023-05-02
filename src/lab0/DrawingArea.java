@@ -36,10 +36,14 @@ public class DrawingArea extends JPanel {
         Drawing.pen().fillRect(400, 500, 80, 30);
         Drawing.pen().drawOval(200, 500, 50, 50);*/
 
-        Cat aCat = new Cat();
-        aCat.drawAt(600, 400);
+        Scene scene = new Scene();
 
-        // you find further commands at oracle docs for Java 1.8:
-        // https://docs.oracle.com/javase/8/docs/api/java/awt/Graphics.html
+        // points cat at the address of the reliance on the parameters left and bottom
+/*        Point address3 = new Point(600, 600);
+
+        Cat aCat = new Cat(address3,100,100);
+        aCat.drawAt(100, 100);*/
+
+
     }
 }
