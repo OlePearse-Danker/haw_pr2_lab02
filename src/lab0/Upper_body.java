@@ -28,7 +28,7 @@ public class Upper_body {
 
     }
 
-    public void drawAt_classic(int left, int bottom) {
+    public void drawAt(int left, int bottom) {
 
         int xTail = left + 224;
         int yTail = bottom + 45;
@@ -37,7 +37,6 @@ public class Upper_body {
         int yLegs = bottom + 170;
 
         // drawing the upper body
-        Drawing.pen().setColor(upper_body_color);
         Drawing.pen().fillOval(left, bottom, width, height);
 
         aTail.drawAt(xTail, yTail);
@@ -45,8 +44,29 @@ public class Upper_body {
 
     }
 
-    public void drawAt_random(int left, int bottom) {
+    public void drawAt_classic(int left, int bottom) {
+
+/*
         int xTail = left + 224;
+        int yTail = bottom + 45;
+
+        int xLegs = left;
+        int yLegs = bottom + 170;
+*/
+
+        // drawing the upper body
+        Drawing.pen().setColor(upper_body_color);
+/*
+        Drawing.pen().fillOval(left, bottom, width, height);
+
+        aTail.drawAt(xTail, yTail);
+        aLegs.drawAt(xLegs, yLegs);
+*/
+        this.drawAt(left, bottom);
+    }
+
+    public void drawAt_random(int left, int bottom) {
+/*        int xTail = left + 224;
         int yTail = bottom + 45;
 
         int xLegs = left;
@@ -57,7 +77,11 @@ public class Upper_body {
         Drawing.pen().fillOval(left, bottom, width, height);
 
         aTail.drawAt(xTail, yTail);
-        aLegs.drawAt(xLegs, yLegs);
+        aLegs.drawAt(xLegs, yLegs);*/
+
+        Drawing.pen().setColor(random_upper_body_color);
+        this.drawAt(left, bottom);
+
     }
 
 
