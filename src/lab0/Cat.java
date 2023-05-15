@@ -10,6 +10,14 @@ import java.awt.*;
 
 //---------------------------------------------
 
+/*      The code is a Java class that implements the LocatedRectangle interface.
+        1. The class has two instance variables, `aHead` and `aUpper_body`, which are both composite objects.
+        2. It also has an `address` instance variable which is of type Point.
+        3. The constructor takes in an address, width, and height and sets the `address` instance variable, and creates `aHead` and `aUpper_body` with the given width and height.
+        4. The `draw()` method takes the address and passes it to the `drawAt()` method.
+        5. The `drawAt()` method takes the left and bottom coordinates and passes them to the `drawAt_random()` methods of `aHead` and `aUpper_body`.
+        6. The `address()`, `width()`, and `height()` methods are implemented from the LocatedRectangle interface and return the address, width, and height of the Cat.*/
+
 public class Cat implements LocatedRectangle{
 
 
