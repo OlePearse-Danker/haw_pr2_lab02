@@ -28,7 +28,9 @@ public class DrawingTool extends JFrame {
         Dimension screenSize = getToolkit().getScreenSize();
         setBounds(0, 0, screenSize.width, screenSize.height);
 
+
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
 
         setVisible(true);
     }
@@ -40,6 +42,11 @@ public class DrawingTool extends JFrame {
 
     public static void main(String[] args) {
         DrawingTool drawingTool = new DrawingTool("This is a Cat");
+        drawingTool.constructDrawingArea();
+
         System.out.println("App started.");
     }
 }
+
+
+

@@ -33,16 +33,16 @@ public class Head {
 
     public void drawAt(int left, int bottom){
 
-        int x = left - 75;
-        int y = bottom - 50;
+        int x = (int) (left - (width * 0.75));
+        int y = (int) (bottom - (width * 0.5));
 
         // Coordinates for Eye
-        int xEye = left - 10;
-        int yEye = bottom - 10;
+        int xEye = (int) (left - (width * 0.1));
+        int yEye = (int) (bottom - (width * 0.1));
 
         // Coordinates for Ears
-        int xEar = left - 10;
-        int yEar = bottom - 10;
+        int xEar = (int) (left - (width * 0.1));
+        int yEar = (int) (bottom - (width * 0.1));
 
         // Coordinates for the mouth
         int xMouth = left;
@@ -64,16 +64,16 @@ public class Head {
     }
     public void drawAt_random(int left, int bottom){
 
-        int x = left - 75;
-        int y = bottom - 50;
+        int x = (int) (left - (width * 0.75));
+        int y = (int) (bottom - (width * 0.5));
 
         // Coordinates for Eye
-        int xEye = left - 10;
-        int yEye = bottom - 10;
+        int xEye = (int) (left - (width * 0.1));
+        int yEye = (int) (bottom - (width * 0.1));
 
         // Coordinates for Ears
-        int xEar = left - 10;
-        int yEar = bottom - 10;
+        int xEar = (int) (left - (width * 0.1));  ;
+        int yEar = (int) (bottom - (width * 0.1));
 
         // Coordinates for the mouth
         int xMouth = left;

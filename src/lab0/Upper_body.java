@@ -4,7 +4,7 @@ import java.awt.*;
 
 public class Upper_body {
 
-    public int width;
+    public int width; // q: what value does width and height have when this is called?
     public int height;
 
     private Color upper_body_color = new Color(153,102,0);
@@ -30,13 +30,13 @@ public class Upper_body {
 
     public void drawAt(int left, int bottom) {
 
-        int xTail = left + 224;
-        int yTail = bottom + 45;
+        int xTail = (int) (left + (height * 2.24));
+        int yTail = (int) (bottom + (height * 0.45));
 
         int xLegs = left;
-        int yLegs = bottom + 170;
+        int yLegs = (int) (bottom + (height * 1.7)); // q: what is the value of height here?   a: 200
 
-        // drawing the upper body
+        // drawing the upper body3
         Drawing.pen().fillOval(left, bottom, width, height);
 
         aTail.drawAt(xTail, yTail);
@@ -44,40 +44,9 @@ public class Upper_body {
 
     }
 
-    public void drawAt_classic(int left, int bottom) {
-
-/*
-        int xTail = left + 224;
-        int yTail = bottom + 45;
-
-        int xLegs = left;
-        int yLegs = bottom + 170;
-*/
-
-        // drawing the upper body
-        Drawing.pen().setColor(upper_body_color);
-/*
-        Drawing.pen().fillOval(left, bottom, width, height);
-
-        aTail.drawAt(xTail, yTail);
-        aLegs.drawAt(xLegs, yLegs);
-*/
-        this.drawAt(left, bottom);
-    }
 
     public void drawAt_random(int left, int bottom) {
-/*        int xTail = left + 224;
-        int yTail = bottom + 45;
 
-        int xLegs = left;
-        int yLegs = bottom + 170;
-
-        // drawing the upper body
-        Drawing.pen().setColor(random_upper_body_color);
-        Drawing.pen().fillOval(left, bottom, width, height);
-
-        aTail.drawAt(xTail, yTail);
-        aLegs.drawAt(xLegs, yLegs);*/
 
         Drawing.pen().setColor(random_upper_body_color);
         this.drawAt(left, bottom);
@@ -86,3 +55,5 @@ public class Upper_body {
 
 
 }
+
+
